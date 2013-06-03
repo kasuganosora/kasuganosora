@@ -13,6 +13,11 @@
   <body>
 
 	  helloworld
-    
+	  <script type="text/javascript" charset="utf-8">
+	  var xhr = new XMLHttpRequest();
+	  xhr.open("GET","https://api.github.com/",true);
+	  xhr.onload = function(data) {console.log(data)};
+	  xhr.send();
+	  </script>
   </body>
 </html>
